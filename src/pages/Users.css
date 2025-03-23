@@ -1,0 +1,11 @@
+.userCenter {
+    margin: auto;
+    width: 70%;
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  h1 {
+    text-align: center;
+  }
