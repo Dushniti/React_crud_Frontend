@@ -7,7 +7,7 @@ export default function CreateUser() {
   const navigate = useNavigate();
 
   const handleCreate = (data) => {
-    axios.post("http://localhost:5000/api/users", data).then(() => navigate("/"));
+    axios.post("http://localhost:5000/api/users/create", data).then(() => navigate("/"));
   };
 
   return (

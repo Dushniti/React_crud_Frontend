@@ -14,8 +14,21 @@ export default function UpdateUser() {
   }, [id]);
 
   const handleUpdate = (data) => {
-    axios.put(`http://localhost:5000/api/users/${id}`, data).then(() => navigate("/"));
+    axios.put(`http://localhost:5000/api/users/update/${id}`, data).then(() => navigate("/"));
   };
+
+  // const handleUpdate = ( data) => {
+  //   axios.put(`http://localhost:5000/api/users/update?id=${data._id}`, data).then(() => navigate("/"))
+  //     .then(() => navigate("/"));
+  // };
+
+//   const handleUpdate = ( data) => {
+//   axios.put("http://localhost:5000/api/users/update/${id}", {data })
+//     .then(() => navigate("/"))
+//     .catch((err) => console.error("Update failed:", err));
+// };
+
+  
 
   return (
     <div className="updatecenter">
